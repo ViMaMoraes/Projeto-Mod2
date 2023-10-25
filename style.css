@@ -1,20 +1,39 @@
 body {
     background-color: #CCCCCC;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #CCCCCC;
+    text-align: center;
+}
+
+input {
+    width: 65%;
+    height: 5px;
+    padding: .9rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+    margin-bottom: .8rem;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #621E6E;
 }
 
 .container {
-    background: linear-gradient (to bottom, #200D24, #621E6E);
+    background-image: linear-gradient(#200D24, #621E6E);
     margin: auto;
-    width: 600px;
-    box-shadow: 1px, 3px, 8px 1px rgba(0, 0, 0, 0.2);
+    width: 670px;
+    height: 590px;
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     padding: .9rem;
-    text-align: center;
 }
 
 .flex-container {
@@ -24,7 +43,26 @@ body {
 
 .header-title {
     color: #FECD23;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.header-subtitle {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: .9rem;
+}
+
+.form {
+    background-image: linear-gradient(#621E6E, #200D24);
+    width: 87%;
+    height: 330px;
+    padding: 1.2rem;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5rem;
+    border-radius: 5px;
 }
