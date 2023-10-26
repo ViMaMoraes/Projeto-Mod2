@@ -32,6 +32,11 @@ input:focus {
     flex-direction: column;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .header {
     padding: .9rem;
 }
@@ -65,4 +70,11 @@ input:focus {
     justify-content: center;
     margin-left: 1.5rem;
     border-radius: 5px;
+}
+
+.form-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    text-align: center;
 }
