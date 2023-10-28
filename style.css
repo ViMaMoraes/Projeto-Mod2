@@ -5,15 +5,17 @@ body {
     text-align: center;
 }
 
-input {
-    width: 65%;
-    height: 5px;
-    padding: .9rem;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border: 0;
-    margin: 10px;
-    margin-bottom: .8rem;
+button {
+    width: 60%;
+    padding: .9rem 1.7rem;
+    color: #FFF;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    background-color: #1D0C20;
 }
 
 input:focus {
@@ -21,12 +23,26 @@ input:focus {
     box-shadow: 0 0 10px #621E6E;
 }
 
+input {
+    margin: auto;
+    width: 80%;
+    height: 5px;
+    padding: .9rem;
+    align-self: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+    margin-bottom: 1rem;
+}
+
 .container {
     background-image: linear-gradient(#200D24, #621E6E);
     margin: auto;
-    width: 670px;
-    height: 590px;
-    border-radius: 5px;
+    max-width: 690px;
+    width: 100%;
+    height: 715px;
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -34,21 +50,19 @@ input:focus {
 
 .flex-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 .header {
     padding: .9rem;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-}
-
 .header-title {
     color: #FECD23;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 1.6rem;
 }
@@ -61,20 +75,68 @@ input:focus {
 
 .form {
     background-image: linear-gradient(#621E6E, #200D24);
-    width: 87%;
-    height: 330px;
-    padding: 1.2rem;
+    height: 78%;
+    padding: 2.5rem .6rem 2rem .6rem;
     color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 1.5rem;
-    border-radius: 5px;
+    margin-right: 1.5rem;
+    border-radius: 10px;
 }
 
 .form-title {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 400;
     margin-bottom: 1.2rem;
     text-align: center;
+}
+
+.cards {
+    background-image: linear-gradient(#3F61EF, #6CBEFC);
+    border: 12px solid #2637DA;
+    border-radius: .6rem;
+    width: 27%;
+}
+
+.cards-img {
+    width: 80%;
+}
+
+.cards-title {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.footer {
+    font-size: .6rem;
+    color: #FFF;
+}
+
+@media screen and (max-width: 620px) {
+    html {
+        font-size: 14px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .container {
+        background-image: linear-gradient(#200D24, #621E6E);
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        display: block;
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 2rem;
+    }
 }
